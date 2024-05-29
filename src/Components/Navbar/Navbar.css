@@ -1,0 +1,16 @@
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-logos , .navbar-lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-logos{
+    gap: 10px;
+}
+.navbar-list{
+ padding: 0 10px;
+}
