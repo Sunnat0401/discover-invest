@@ -1,0 +1,86 @@
+.about{
+    width: 100%;
+    position: relative;
+}
+.about-title{
+    font-size: 32px;
+    font-weight: 700;
+    color: #262524;
+    position: relative;
+    margin-left: 60px;
+
+}
+.about-line::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: #FAB448;
+    top: 25%;
+    -webkit-transform: translateY(100%);
+    transform: translateX(-100%);
+    left: -10px;
+    padding: 0 10px  ;
+}
+.about-text{
+    width: 450px;
+   font-size: 16px;
+   color: #919190;
+ padding: 10px 0;
+}
+.about-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    /* border: 2px solid red; */
+}
+.about-cards{
+    width: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-right: 150px;
+    margin-top: 150px;
+}
+.about-card:nth-child(1){
+   visibility: hidden;
+}
+.about-card:nth-child(9){
+    visibility: hidden;
+ }
+ .about-subline{
+    color: #262524 ;
+ }
+.about-card{
+    width: 200px;
+    height: 150px;
+    border: 2px solid #262524;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 1s ease;
+}
+.about-card:hover{
+    background: url('../../assets//about-pic.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+}
+.about-card:hover .about-headline  {
+    color: #fff;
+}
+.about-card:hover .about-subline  {
+    color: #fff;
+}
+.about-card.active{
+  background-color: #FAB448;
+}
+.about-card.active:hover{
+    background: #FAB448;
+}
+.about-subtext{
+    text-align: center;
+}

@@ -1,14 +1,12 @@
 .homepage {
     position: relative;
   }
-  
   .video-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height:90vh;
     overflow: hidden;
   }
-  
   .video-bg {
     position: absolute;
     width: 100%;
@@ -16,15 +14,94 @@
     object-fit: cover;
  opacity: 100;
   }
-  
-  .container {
-    position: relative; /* Ensure the container is above the video */
-    z-index: 1; /* Ensure the content is above the video */
+  .homepage .container {
+    position: relative; 
+    z-index: 1; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
   }
-  
   .content {
     padding: 20px;
     color: white;
     text-align: center;
   }
-  
+  .homepage-info .homepage-title{
+    font-size: 56px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.045em;
+    font-weight: 700;
+  }
+  .homepage-text{
+    color: white;
+    margin: 10px 0 ;
+  }
+  .homepage-btns{
+    margin: 20px 0;
+  }
+.homepage-bottom{
+   display: flex;
+   margin: 3px 0;
+   position: relative;
+  }
+    .homepage-top{
+      position: absolute;
+      margin-top: -25px;
+      /* margin-right: -50px; */
+    
+    }
+    .homepage-border{
+      width: 100px;
+      height: 30px;
+      background-color: transparent;
+      border: 1px solid #FAB448;
+      margin: 0 20px;
+      display: flex;
+    }
+  .homepage-btn{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #FAB448;
+    margin: 0 10px;
+    color: white;
+    margin-right: 30px;
+    transition: all 1s ease;
+    text-align: center;
+  }
+  .homepage-border:hover .homepage-btn {
+    transform: translate(11px, -9px);
+  }
+  .homepage-btn:hover {
+    transform: translate(11px , -9px);
+
+  }
+  .homepage-btn.active{
+    background-color: #FAB448;
+  }
+  .homepage-modal{
+    font-size: 18px;
+    padding: 10px;
+    background-color: #FAB448;
+    color: white;
+    position: fixed;
+    right: 70px;
+    bottom: 100px;
+    animation: grow-shrink 2s infinite;
+}
+
+@keyframes grow-shrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); 
+    }
+    100% {
+      transform: scale(1); 
+    }
+  }

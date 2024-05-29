@@ -7,16 +7,25 @@ const HomePages = () => {
       <Navbar/>
       <div className="video-container">
         <video autoPlay muted loop className="video-bg">
-          <source src="/src/assets/videomp4.mp4" type="video/mp4" />
+          <source src="/src/assets/video6.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="container">
-           <h1 className="homepage-tit">Discover <br /> Invest</h1>
+        <div className="homepage-info">
+        <h1 className="homepage-title">Discover <br /> Invest</h1>
            <p className="homepage-text">Har jihatta mukammallik</p>
            <div className="homepage-btns">
-            <button className="home-page-btn">Loyihalar</button>
-            <button className="home-page-btn">Aloqa</button>
+               <div className="homepage-bottom">
+                     <a href='' className="homepage-border"></a>
+                     <a href='' className="homepage-border"></a>
+               </div>
+               <div className="homepage-top">
+               <a  href='' className="homepage-btn active">Loyihalar</a>
+            <a href='' className="homepage-btn">Aloqa</a>
+               </div>
            </div>
+        </div>
+          <i className=" fa-solid fa-phone homepage-modal "></i>
         </div>
       </div>
     </div>
