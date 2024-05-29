@@ -1,16 +1,98 @@
+.navbar{
+    width: 100%;
+    position: sticky;
+    top: 0; 
+    z-index: 999; 
+}
+.navbar-active{
+    background-color: #e6e0e0;
+}
 .navbar .container {
+    padding: 19px 0 ;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.navbar-logos , .navbar-lists {
+ }
+ .navbar-img{
+    width: 35px;
+    height: 35px;
+ }
+ .navbar-title{
+    font-size: 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #262524;
+ }
+.navbar-logos , .navbar-items ,  .navbar-lists {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.navbar-list:hover .star-icon{
+    color: #FAB448;
+    visibility: visible;
+}
+.navbar-link{
+    font-size: 13px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #262524;
+}
+.star-icon{
+    padding:  0px 4px;
+    visibility: hidden;
+    transition: all 0.05s ease;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .navbar-logos{
     gap: 10px;
 }
 .navbar-list{
  padding: 0 10px;
+}
+.navbar-item{
+    padding: 0 10px;
+}
+.navbar-hamburger{
+    display: none;
+}
+.navbar-select{
+    width: 70px;
+    height: 24px;
+    border-radius: 6px;
+    border: none; 
+    cursor: pointer;
+    outline: none;
+    margin: 0px 10px;
+}
+.navbar-select:hover {
+    background-color: #FAB448;
+}
+.navbar-select option {
+    background-color: #FAB448; 
+    color: black; 
+}
+.navbar-connect{
+    padding: 0px 10px ;
+
+}
+.navbar-sublink{
+    font-size: 16px;
+    transition: all 0.3s ease;
+    color: #262524;
+}
+.navbar-sublink:hover{
+    color: #FAB448;
+}
+.navbar-connect{
+    color: #262524;
+}
+.phone-icon{
+    font-size: 17px;
+    margin: 0px 8px;
+    padding: 10px;
+    color: #ffff;
+    background-color: #FAB448;
 }
