@@ -50,6 +50,6 @@
     transform: scale(1.05);
 }
 .ourteam-card:hover .ourteam-headline ,
-.ourteam-card:hover.ourteam-description {
+.ourteam-card:hover .ourteam-description {
     color: #FAB448;
 }

@@ -12,7 +12,7 @@ const OurTeam = () => {
       <div className="container">
         <h2 className="ourteam-title">
           <span className="ourteam-line">Bizning</span> <br />
-          <span className='pl'>afzalliklarimiz</span>
+          <span className='pl'>jamoa</span>
         </h2>
         <Swiper
     slidesPerView={4}

@@ -1,10 +1,14 @@
 import Navbar from '../../Components/Navbar/Navbar'
+import OurProjects from '../../Components/OurProjects/OurProjects'
+import OurTeam from '../../Components/OurTeam/OurTeam'
+import About from '../About/About'
 import './HomePages.css'
 
 const HomePages = () => {
   return (
-    <div className='homepage'>
+   <>
       <Navbar/>
+       <div className='homepage'>
       <div className="video-container">
         <video autoPlay muted loop className="video-bg">
           <source src="/src/assets/video6.mp4" type="video/mp4" />
@@ -29,6 +33,10 @@ const HomePages = () => {
         </div>
       </div>
     </div>
+    <About/>
+    <OurTeam/>
+    <OurProjects/>
+   </>
   )
 }
 
