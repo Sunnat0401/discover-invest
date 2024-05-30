@@ -1,4 +1,4 @@
-import { video } from '../../assets'
+// import { video } from '../../assets'
 import Navbar from '../../Components/Navbar/Navbar'
 import OurProjects from '../../Components/OurProjects/OurProjects'
 import OurTeam from '../../Components/OurTeam/OurTeam'
@@ -12,7 +12,7 @@ const HomePages = () => {
        <div className='homepage'>
       <div className="video-container">
         <video autoPlay muted loop className="video-bg">
-          <source src={video} type="video/mp4" />
+          <source src="/banner.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="container">
