@@ -41,6 +41,7 @@
   }
   .homepage-btns{
     margin: 20px 0;
+    line-height: 22px;
   }
 .homepage-bottom{
    display: flex;

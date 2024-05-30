@@ -11,7 +11,7 @@ const HomePages = () => {
        <div className='homepage'>
       <div className="video-container">
         <video autoPlay muted loop className="video-bg">
-          <source src="/src/assets/video6.mp4" type="video/mp4" />
+          <source src="src/assets/banner.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="container">
