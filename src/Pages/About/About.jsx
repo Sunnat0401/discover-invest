@@ -1,10 +1,12 @@
 import React from 'react'
 import './About.css'
+import Advantage from '../../Components/Advantage/Advantage'
 const About = () => {
   return (
     <div className='about'>
         <div className="container">
-            <h2 className="about-title">
+     <div className="about-left">
+     <h2 className="about-title">
                 <span className="about-line">
  Discover Invest
                 </span> <br />
@@ -15,7 +17,8 @@ const About = () => {
             <p className="about-text">
             Kompaniyamiz nafaqat loyihalarni takomillashtirish, balki yangi imkoniyatlar uchun ham o'z eshiklarini ochadi. Davlat miqyosidagi imoratlarni barpo qilish bilan birga, istiqbol uchun ham asos solishda davom etamiz Biz atrof-muhit haqida qayg'uramiz: kompaniya binolar va infratuzilma poydevorlarini barpo etishdan tashqari, ulardan foydalanish bilan bog'liq ekologik jihatlar uchun hamma ma’suliyatni o'z zimmasiga oladi.
             </p>
-                    <div className="about-wrapper">
+     </div>
+                    <div className="about-right">
                     <div className="about-cards">
             <div className="about-card">
                             <h1 className='about-headline'>16</h1>
@@ -56,6 +59,7 @@ const About = () => {
             </div>
                     </div>
         </div>
+        <Advantage/>
     </div>
   )
 }
