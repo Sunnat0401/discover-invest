@@ -1,5 +1,6 @@
 // import { video } from '../../assets'
 import Navbar from '../../Components/Navbar/Navbar'
+import News from '../../Components/News/News'
 import OurProjects from '../../Components/OurProjects/OurProjects'
 import OurTeam from '../../Components/OurTeam/OurTeam'
 import About from '../About/About'
@@ -37,6 +38,7 @@ const HomePages = () => {
     <About/>
     <OurTeam/>
     <OurProjects/>
+    <News/>
    </>
   )
 }
