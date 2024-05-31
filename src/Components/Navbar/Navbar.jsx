@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { navbarLogo } from '../../assets'
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [color, setColor] = useState(false);
     const changeColor = () => {
@@ -15,28 +16,28 @@ const Navbar = () => {
   return (
     <div className={`navbar ${color ? 'navbar-active' : ''}`}> 
        <div className="container">
-        <a href="" className="navbar-logos">
+        <Link to="/" className="navbar-logos">
         <img src={navbarLogo} alt="navbar-logo" className="navbar-img" />
         <div className="navbar-title">
             Discover <br />
             invest
         </div>
-        </a>
+        </Link>
         <ul className="navbar-lists">
             <li className="navbar-list">
-                <a href="" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Kompaniya haqida</a>
+                <Link to="/about" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Kompaniya haqida</Link>
             </li>
             <li className="navbar-list">
-                <a href="" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Loyihalar</a>
+                <Link to="/projects" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Loyihalar</Link>
             </li>
             <li className="navbar-list">
-                <a href="" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Kariyera </a>
+                <Link to="/career" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Kariyera </Link>
             </li>
             <li className="navbar-list">
-                <a href="" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Yangiliklar</a>
+                <Link to="/news" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Yangiliklar</Link>
             </li>
             <li className="navbar-list">
-                <a href="" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Aloqa</a>
+                <Link to="/connect" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Aloqa</Link>
             </li>
         </ul>
         <div className="navbar-right">

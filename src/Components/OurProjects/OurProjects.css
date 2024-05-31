@@ -127,7 +127,7 @@
  align-items: center;
  justify-content:center;
  position: relative;
-padding: 20px 0;
+margin: 50px 0;
 }
 .ourproject-button{
     display: block;
@@ -147,11 +147,11 @@ padding: 20px 0;
     line-height: 23px;
     color: #262524;
 }
+.ourproject-button.active:hover{
+    color: white;
+    background-color: #FAB448;
+}
 
 .ourproject-button:hover  {
     transform: translateY(0) translateX(0);
-}
-.ourproject-button:hover{
-    color: white;
-    background-color: #FAB448;
 }

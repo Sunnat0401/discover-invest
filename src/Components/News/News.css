@@ -1,3 +1,8 @@
+.news{
+    background: url('../../assets/bg-news.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .news-title{
     font-size: 32px;
     font-weight: 700;
@@ -45,16 +50,51 @@
     /* padding: 245px 15px 0px; */
     transition: all 1s ease;
 }
+.news-card.bg1{
+    background: url('../../assets/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.news-card.bg2{
+  background: url('../../assets/bg3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+.news-card.bg3{
+    background: url('../../assets/bg4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.news-card.bg4{
+    background: url('../../assets/bg5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.news-card.bg5{
+    background: url('../../assets/bg6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
 .news-headline{
     color: white;
 }
 
 .news-information{
-    padding: 250px 15px 0 ;
+    padding: 200px 15px 0 ;
     transition: all 1s ease;
 }
 .news-card:hover .news-information{
-    padding: 170px 15px 0;
+    padding: 150px 15px 0;
 }
 .news-description{
     display: none;
@@ -78,3 +118,41 @@
     border-radius: 50%;
     background-color: #FAB448;
 }
+
+.news-buttons{
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+   margin: 50px 0;
+   }
+   .news-button{
+       display: block;
+       width: 120px;
+       height: 30px;
+       border: 2px solid #FAB448;
+       position: relative;
+       font-size: 15px;
+       margin: 20px 0;
+   }
+   .news-button.active{
+       width: 120px;
+       height: 30px;
+       border: 2px solid #FAB448;
+       position: absolute;
+       transform: translateY(8px) translateX(-10px);
+       transition: all 0.5s ease;
+       text-align: center;
+       line-height: 23px;
+       color: #262524;
+   }
+   .news-button.active:hover{
+    color: white;
+    background-color: #FAB448;
+}
+.news-button:hover  {
+ transform: translateY(0) translateX(0);
+}
+   
+

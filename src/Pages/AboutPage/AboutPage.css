@@ -1,0 +1,51 @@
+.aboutpage-wrapper{
+    width: 100%;
+    height: 100vh;
+    background: url('../../assets/bg4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.aboutpage-information{
+    margin: 50px 0;
+}
+.aboutpage-title{
+    color: white;
+    padding: 50px 0;
+    font-size: 56px;
+}
+.aboutpage-subtitle{
+    color: white;
+    width: 600px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.aboutpage-buttons{
+    display: flex;   
+    flex-direction: column;
+    /* align-items: center;
+    justify-content:center; */
+    position: relative;
+   margin: 50px 0;
+   }
+   .aboutpage-button{
+       display: block;
+       width: 180px;
+       height: 30px;
+       border: 2px solid #FAB448;
+       position: relative;
+   }
+   .aboutpage-button.active{
+       width: 180px;
+       height: 30px;
+       border: 2px solid #FAB448;
+       position: absolute;
+       transform: translateY(8px) translateX(-10px);
+       transition: all 0.5s ease;
+       text-align: center;
+       line-height: 23px;
+       color: #fff;
+       background-color: #FAB448;
+   }
+   .aboutpage-button:hover  {
+       transform: translateY(0) translateX(0);
+   }

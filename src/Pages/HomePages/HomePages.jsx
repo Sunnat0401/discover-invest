@@ -1,10 +1,12 @@
 // import { video } from '../../assets'
+import About from '../About/About'
+import Contact from '../../Components/Contact/Contact'
 import Navbar from '../../Components/Navbar/Navbar'
 import News from '../../Components/News/News'
 import OurProjects from '../../Components/OurProjects/OurProjects'
 import OurTeam from '../../Components/OurTeam/OurTeam'
-import About from '../About/About'
 import './HomePages.css'
+import { Link } from 'react-router-dom'
 
 const HomePages = () => {
   return (
@@ -26,8 +28,8 @@ const HomePages = () => {
                      <a href='' className="homepage-border"></a>
                </div>
                <div className="homepage-top">
-               <a  href='' className="homepage-btn active">Loyihalar</a>
-            <a href='' className="homepage-btn">Aloqa</a>
+               <Link  to='/projects' className="homepage-btn active">Loyihalar</Link>
+            <Link to='connect' className="homepage-btn">Aloqa</Link>
                </div>
            </div>
         </div>
@@ -39,6 +41,7 @@ const HomePages = () => {
     <OurTeam/>
     <OurProjects/>
     <News/>
+    <Contact/>
    </>
   )
 }

@@ -3,6 +3,7 @@
     position: sticky;
     top: 0; 
     z-index: 999; 
+    
 }
 .navbar-active{
     background-color: #e6e0e0;
@@ -12,6 +13,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: 0;
+    border-bottom: 1px solid; /* Thickness of the bottom border */
+    border-image: linear-gradient(to right, rgba(240, 230, 230, 0.2), rgba(240, 230, 230, 1), rgba(240, 230, 230, 0.2)) 1;
  }
  .navbar-img{
     width: 35px;

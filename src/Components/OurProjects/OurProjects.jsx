@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './OurProjects.css'
 const OurProjects = () => {
   return (
@@ -65,8 +66,8 @@ const OurProjects = () => {
             </div>
         </div>
         <div className="ourproject-buttons">
-         <a href='' className="ourproject-button"></a>
-         <a href='' className="ourproject-button active ">Barcha loyihalar</a>
+         <Link to='projects' className="ourproject-button"></Link>
+         <Link to='projects' className="ourproject-button active ">Barcha loyihalar</Link>
         </div>
         </div>
     </div>
