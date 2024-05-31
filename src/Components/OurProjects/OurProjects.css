@@ -34,32 +34,124 @@
     margin: 10px 0;
     position: relative;
 }
-.ourproject-info{
+.ourproject-card.background1{
+    background: url('../../assets/ourproject1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    margin: 10px 0;
+    position: relative;
+}
+.ourproject-card.background2{
+    background: url('../../assets/ourproject3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    margin: 10px 0;
+    position: relative;
+}
+.ourproject-card.background3{
+    background: url('../../assets/ourproject4.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    margin: 10px 0;
+    position: relative;
+}
+.ourproject-card.background5{
+    background: url('../../assets/ourproject5.webp');
+    background-size: cover;
+    background-repeat: no-headlineepeat;
+    background-position: center;
+    object-fit: cover;
+    margin: 10px 0;
+    position: relative;
+}
+.ourproject-card.background6{
+    background: url('../../assets/ourproject6.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    margin: 10px 0;
+    position: relative;
+}
+.ourproject-info {
+    position: relative; /* Yangi qo'shildi */
+    z-index: 1; /* Yangi qo'shildi */
     width: 100%;
-    /* display: flex; */
     margin-top: 240px;
     transition: all 1s ease;
 }
-.ourproject-headline{
+.ourproject-headline {
     color: white;
-  padding: 5px 15px;
+    padding: 5px 15px;
+    font-size: 22px;
+    font-weight: 700;
 }
-.ourproject-text{
+.ourproject-text {
     display: none;
 }
-.ourproject-card:hover .ourproject-info{
+.ourproject-card:hover .ourproject-info {
     margin-top: 10px;
 }
-.ourproject-card:hover .ourproject-headline{
+.ourproject-card:hover .ourproject-headline {
     color: #FAB448;
     padding: 5px 15px;
     font-weight: 700;
 }
-.ourproject-card:hover .ourproject-text{
+.ourproject-card:hover .ourproject-text {
     display: block;
     color: white;
     padding: 5px 15px;
 }
-/* .ourproject-card:hover{
-    background: rgba(0,0,0,0.1);
-} */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Boshida shaffof */
+    transition: background-color 0.3s ease;
+}
+.ourproject-card:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Hover bo'lganda qoraytirish */
+}
+.ourproject-buttons{
+ display: flex;   
+ flex-direction: column;
+ align-items: center;
+ justify-content:center;
+ position: relative;
+padding: 20px 0;
+}
+.ourproject-button{
+    display: block;
+    width: 120px;
+    height: 30px;
+    border: 2px solid #FAB448;
+    position: relative;
+}
+.ourproject-button.active{
+    width: 120px;
+    height: 30px;
+    border: 2px solid #FAB448;
+    position: absolute;
+    transform: translateY(8px) translateX(-10px);
+    transition: all 0.5s ease;
+    text-align: center;
+    line-height: 23px;
+    color: #262524;
+}
+
+.ourproject-button:hover  {
+    transform: translateY(0) translateX(0);
+}
+.ourproject-button:hover{
+    color: white;
+    background-color: #FAB448;
+}
