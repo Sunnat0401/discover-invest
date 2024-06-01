@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom'
 import Navbar from '../../Components/Navbar/Navbar'
 import './AboutPage.css'
 import AboutCompany from '../../Components/AboutCompany/AboutCompany'
+import Tasks from '../../Components/Tasks/Tasks'
+import AboutCards from '../../Components/AboutCards/AboutCards'
+import Contact from '../../Components/Contact/Contact'
 const AboutPage = () => {
   return (
     <div className='aboutpage'>
@@ -24,6 +27,9 @@ const AboutPage = () => {
         </div>
       </div>
       <AboutCompany/>
+      <Tasks/>
+      <AboutCards/>
+      <Contact/>
     </div>
   )
 }

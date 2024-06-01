@@ -1,0 +1,41 @@
+.tasks{
+    background: url('../../assets/AboutPagebggg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tasks-card{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-left: 4px solid #FAB448 ;
+}
+.tasks-information{
+    width: 650px;
+}
+.tasks-img{
+    width: 460px;
+    height: 230px;
+    object-fit: cover;
+    margin: 10px 0;
+}
+.tasks-headline{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAB448;
+    color: #000;
+    margin: 10px 10px 10px -15px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.tasks-title{
+    padding: 10px 0;
+}
+.tasks-text{
+    line-height: 20px;
+    color: #575756;
+}

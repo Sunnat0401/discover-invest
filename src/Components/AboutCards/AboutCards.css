@@ -1,0 +1,31 @@
+.aboutcards .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+.aboutcard{
+    width: 250px;
+    height: 117px;
+    border: 1px solid #514c4c;
+    padding: 20px;
+    margin: 10px 30px;
+ transition: all 0.5s ease;
+}
+.aboutcard-title{
+    font-size: 40px;
+    transition: all 0.5s ease;
+}
+.aboutcard-text{
+    transition: all 0.5s ease;
+}
+.aboutcard:hover{
+    background: url('../../assets/about-pic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.aboutcard:hover .aboutcard-title,
+.aboutcard:hover .aboutcard-text{
+    color: white;
+}

@@ -1,17 +1,22 @@
 
+.company{
+    background: url('../../assets/bg-timeline.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
 .company .container{
     width: 100%;
-    border: 2px solid red;
     display: flex;
     justify-content:space-between;
     padding: 15px 0;
 }
 .company-title{
     font-size: 32px;
-    font-weight: 700;
     color: #262524;
     position: relative;
     margin-left: 60px;
+    font-weight: bold;
 }
 .company-line::before{
     position: absolute;
@@ -19,7 +24,7 @@
     width: 20px;
     height: 3px;
     background-color: #FAB448;
-    top: 25%;
+    top: 15px;
     -webkit-transform: translateY(100%);
     transform: translateX(-100%);
     left: -10px;
@@ -29,7 +34,7 @@
     width: 650px;
 }
 .company-img{
-    width: 540px;
+    width: 100%;
     height: 250px;
     margin: 10px 0;
    transition: all 0.5s ease;
@@ -42,3 +47,36 @@
   color: #575756;
   padding: 10px 0;
 }
+.company-buttons{
+    display: flex;   
+    flex-direction: column;
+    position: relative;
+   margin: 10px 0;
+   }
+   .company-button{
+       display: block;
+       width: 120px;
+       height: 30px;
+       border: 2px solid #FAB448;
+       position: relative;
+       font-size: 15px;
+       margin: 20px 0;
+       
+   }
+   .company-button.active{
+       width: 120px;
+       height: 30px;
+       border: 2px solid #FAB448;
+       background-color: #FAB448;
+       color: white;
+       position: absolute;
+       transform: translateY(8px) translateX(-10px);
+       transition: all 0.5s ease;
+       text-align: center;
+       line-height: 23px;
+   }
+
+.company-button:hover  {
+ transform: translateY(0) translateX(0);
+}
+   

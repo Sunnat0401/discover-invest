@@ -109,34 +109,10 @@ Discover Invest kompaniyasining keng ko'lamli qurilish obyektlari
             <p className="news-description">Loyiha menejeri</p>
              </div>
           </SwiperSlide>
-        {/* <SwiperSlide className='ourteam-card'><img src={ourteam5} alt="team" className='ourteam-img' />
-            <h3 className="ourteam-headline">
-            Ahmadov Mahmud Nazar o'gli
-            </h3>
-            <p className="ourteam-description">Qurilishda usta</p></SwiperSlide>
-        <SwiperSlide className='ourteam-card'><img src={ourteam3} alt="team" className='ourteam-img' />
-            <h3 className="ourteam-headline">
-              Bekmatov Botir Sanjar o'gli
-            </h3>
-            <p className="ourteam-description">Qurilishda uchastka rahbari</p></SwiperSlide>
-        <SwiperSlide className='ourteam-card'><img src={ourteam4} alt="team" className='ourteam-img' />
-            <h3 className="ourteam-headline">
-            Ashirov Bahodir Mirjalol o'g'li
-            </h3>
-            <p className="ourteam-description">Loyiha menejeri</p></SwiperSlide>
-        <SwiperSlide className='ourteam-card'><img src={ourteam5} alt="team" className='ourteam-img' />
-            <h3 className="ourteam-headline">
-              Bekmatov Suratbek Alisher o'g'li
-            </h3>
-            <p className="ourteam-description">Qurilishda usta</p></SwiperSlide>
-        <SwiperSlide className='ourteam-card'><img src={ourteam6} alt="team" className='ourteam-img' />
-            <h3 className="ourteam-headline">
-             Batirov Umar Ubaydulla o'g'li
-            </h3>
-            <p className="ourteam-description">Loyiha menejeri</p></SwiperSlide> */}
+       
       </Swiper>
       <div className="news-buttons">
-         <a href='' className="news-button"></a>
+         <Link to='news' className="news-button"></Link>
          <Link to='news' className="news-button active ">Barcha yangiliklar</Link>
         </div>
       </div>
