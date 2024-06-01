@@ -9,3 +9,23 @@
     max-width: 1240px;
     margin: 0 auto;
 }
+.active .star-icon{
+    display: inline-block;
+    color:#FAB448;
+    visibility: visible;
+}
+
+/* .navbar-list:hover .star-icon{
+    color: #FAB448;
+    visibility: visible;
+}
+.navbar-link{
+    font-size: 13px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #262524;
+}
+.star-icon{
+    padding:  0px 4px;
+    visibility: hidden;
+    transition: all 0.05s ease;
+} */

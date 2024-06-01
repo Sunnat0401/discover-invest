@@ -67,7 +67,7 @@ const OurProjects = () => {
         </div>
         <div className="ourproject-buttons">
          <Link to='projects' className="ourproject-button"></Link>
-         <Link to='projects' className="ourproject-button active ">Barcha loyihalar</Link>
+         <Link to='projects' className="ourproject-button active ">Yangiliklar</Link>
         </div>
         </div>
     </div>

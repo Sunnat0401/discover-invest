@@ -90,6 +90,7 @@
     background-color: #FAB448;
     color: white;
     position: fixed;
+    z-index: 99 ;
     right: 70px;
     bottom: 100px;
     animation: grow-shrink 2s infinite;

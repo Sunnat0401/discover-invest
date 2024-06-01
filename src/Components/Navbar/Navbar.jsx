@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { navbarLogo } from '../../assets'
 import './Navbar.css'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
     const [color, setColor] = useState(false);
     const changeColor = () => {
@@ -25,19 +25,19 @@ const Navbar = () => {
         </Link>
         <ul className="navbar-lists">
             <li className="navbar-list">
-                <Link to="/about" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Kompaniya haqida</Link>
+                <NavLink to="/about" className="navbar-link"  activeClassName="active"> <i class="fa-solid fa-star star-icon"></i>Kompaniya haqida</NavLink>
             </li>
             <li className="navbar-list">
-                <Link to="/projects" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Loyihalar</Link>
+                <NavLink to="/projects" className="navbar-link"  activeClassName="active"> <i class="fa-solid fa-star star-icon"></i>Loyihalar</NavLink>
             </li>
             <li className="navbar-list">
-                <Link to="https://hr.di.uz/" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Kariyera </Link>
+                <NavLink to="https://hr.di.uz/" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Kariyera </NavLink>
             </li>
             <li className="navbar-list">
-                <Link to="/news" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Yangiliklar</Link>
+                <NavLink to="/news" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Yangiliklar</NavLink>
             </li>
             <li className="navbar-list">
-                <Link to="/connect" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Aloqa</Link>
+                <NavLink to="/connect" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Aloqa</NavLink>
             </li>
         </ul>
         <div className="navbar-right">
