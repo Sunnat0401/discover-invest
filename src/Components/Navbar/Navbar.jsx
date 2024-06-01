@@ -2,7 +2,15 @@ import React, { useEffect, useState } from 'react'
 import { navbarLogo } from '../../assets'
 import './Navbar.css'
 import { Link, NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 const Navbar = () => {
+    const { t, i18n } = useTranslation();
+    const languages = localStorage.getItem('i18nextLng') || 'uz';
+
+    const handleChange = (e) => {
+      const selectedLanguage = e.target.value;
+      i18n.changeLanguage(selectedLanguage);
+    };
     const [color, setColor] = useState(false);
     const changeColor = () => {
         setColor(window.scrollY >= 50);
@@ -25,7 +33,7 @@ const Navbar = () => {
         </Link>
         <ul className="navbar-lists">
             <li className="navbar-list">
-                <NavLink to="/about" className="navbar-link"  activeClassName="active"> <i class="fa-solid fa-star star-icon"></i>Kompaniya haqida</NavLink>
+                <NavLink to="/about" className="navbar-link"  activeClassName="active"> <i class="fa-solid fa-star star-icon"></i>{t("about")}</NavLink>
             </li>
             <li className="navbar-list">
                 <NavLink to="/projects" className="navbar-link"  activeClassName="active"> <i class="fa-solid fa-star star-icon"></i>Loyihalar</NavLink>
@@ -52,7 +60,7 @@ const Navbar = () => {
                 <a href="https://t.me/discovery_invest" class="messengers__link" className="navbar-sublink"><i class="fa-brands fa-telegram"></i></a>
             </li>
         </ul>
-        <select name="" id="" className='navbar-select'>
+        <select name="" id="" className='navbar-select' onChange={handleChange} value={languages}>
             <option value="">uz</option>
             <option value="">en</option>
             <option value="">ru</option>
