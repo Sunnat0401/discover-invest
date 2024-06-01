@@ -1,0 +1,44 @@
+
+.company .container{
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    justify-content:space-between;
+    padding: 15px 0;
+}
+.company-title{
+    font-size: 32px;
+    font-weight: 700;
+    color: #262524;
+    position: relative;
+    margin-left: 60px;
+}
+.company-line::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: #FAB448;
+    top: 25%;
+    -webkit-transform: translateY(100%);
+    transform: translateX(-100%);
+    left: -10px;
+    padding: 0 10px  ;
+}
+.company-right{
+    width: 650px;
+}
+.company-img{
+    width: 540px;
+    height: 250px;
+    margin: 10px 0;
+   transition: all 0.5s ease;
+}
+.company-img:hover{
+    border: 2px solid #FAB448;
+}
+.company-text{
+  font-size: 17px;
+  color: #575756;
+  padding: 10px 0;
+}

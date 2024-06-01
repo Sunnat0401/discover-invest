@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Navbar from '../../Components/Navbar/Navbar'
 import './AboutPage.css'
+import AboutCompany from '../../Components/AboutCompany/AboutCompany'
 const AboutPage = () => {
   return (
     <div className='aboutpage'>
@@ -22,6 +23,7 @@ const AboutPage = () => {
         </div>
         </div>
       </div>
+      <AboutCompany/>
     </div>
   )
 }
