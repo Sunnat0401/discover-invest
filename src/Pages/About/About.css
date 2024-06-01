@@ -68,7 +68,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: all 1s ease;
+    transition:  all 1s ease;
+
 }
 .about-card:hover{
     background: url('../../assets//about-pic.jpg');

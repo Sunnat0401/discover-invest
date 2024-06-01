@@ -1,0 +1,33 @@
+.connectpage-wrapper{
+    width: 100%;
+    height: 90vh;
+    background: url('../../assets/bg4.jpg');
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+}
+.connectpage-title{
+    padding: 70px 0;
+    font-size: 56px;
+    color: white;
+}
+.connectpage-text{
+    color: white;
+    line-height: 20px;
+}
+.connectpage-link{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #FAB448;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FAB448 ;
+    margin: 50px 0;
+    transition: .5s ease;
+}
+.connectpage-link:hover{
+    background-color: #FAB448;
+    color: white;
+}

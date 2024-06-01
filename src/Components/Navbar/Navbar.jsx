@@ -31,7 +31,7 @@ const Navbar = () => {
                 <Link to="/projects" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Loyihalar</Link>
             </li>
             <li className="navbar-list">
-                <Link to="/career" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Kariyera </Link>
+                <Link to="https://hr.di.uz/" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Kariyera </Link>
             </li>
             <li className="navbar-list">
                 <Link to="/news" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Yangiliklar</Link>

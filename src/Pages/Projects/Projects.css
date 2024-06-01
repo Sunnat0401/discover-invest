@@ -1,0 +1,16 @@
+
+.projects-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9F9F9;
+    padding: 70px 0;
+}
+.projects-title{
+    font-size: 56px;
+}
+.projects-text{
+    width: 600px;
+    color: #7E654D;
+    line-height: 20px;
+}

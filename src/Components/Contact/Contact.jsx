@@ -1,6 +1,34 @@
+import axios from 'axios'
 import { inputleft } from '../../assets'
 import './Contact.css'
+import { useState } from 'react'
+import { message } from 'antd'
 const Contact = () => {
+    const [loading , setLoading] = useState(false)
+    const SendMessage = ( event) =>{
+        setLoading(true)
+        event.preventDefault();
+        const token = "7004900393:AAGYHAnQhdDlkbJxo4xs-vRbpISIgoTxWR8"
+        const chat_id = 6856618212  ;
+        const url = ` https://api.telegram.org/bot${token}/sendMessage`
+        const name =document.getElementById("name").value
+        const nambers =document.getElementById("numbers").value
+        
+        const sendMessageContent = `Ismi: ${name} \n Familiyasi: ${nambers}`
+        axios({
+          url : url ,
+          method: 'POST',
+          data: {
+            "chat_id" : chat_id,
+            "text":sendMessageContent
+          }
+        }).then((res) => {
+          message.success("Muvaffaqiyatli")
+          document.getElementById("myForm").reset()
+        }).catch((err) => {
+          message.error("yuborishda xatolik", err)
+        }).finally(()=>setLoading(false))
+      }
   return (
     <div className='contact'>
         <div className="container">
@@ -44,18 +72,18 @@ const Contact = () => {
             <a href="https://t.me/discovery_invest"> <i class="fa-brands fa-telegram icon-sign"></i></a>
         
          </div>
-         <form className='contact-form'>
+         <form className='contact-form'  onSubmit={SendMessage} id="myForm">
            <div className="contact-inputs">
            <div className="input-group">
         <label className='contact-label' htmlFor="">Telefon raqam</label>
-        <input  type="tel" required  className="contact-input" placeholder="+ 998 " />
+        <input  type="tel" required  className="contact-input" placeholder="+ 998 " id='numbers' />
     </div>
     <div className="input-group">
         <label className='contact-label' htmlFor="">Ism</label>
-        <input type="text" required className="contact-input" placeholder='Ismingiz nima ?' />
+        <input type="text" required className="contact-input" placeholder='Ismingiz nima ?'  id='name'/>
     </div>
            </div>
-            <button className='contact-btn'>Qayta aloqa</button>
+            <button className='contact-btn' type='submit'>Qayta aloqa</button>
          </form>
             </div>
             <div className="contact-right">
