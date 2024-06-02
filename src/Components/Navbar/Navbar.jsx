@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { navbarLogo } from '../../assets'
+import { hamburger, navbarLogo } from '../../assets'
 import './Navbar.css'
 import { Link, NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import TemporaryDrawer from '../Hamburger/Hamburger';
 const Navbar = () => {
     const { t, i18n } = useTranslation();
     const languages = localStorage.getItem('i18nextLng') || 'uz';
@@ -67,7 +68,7 @@ const Navbar = () => {
         </select>
         <a href="tel:+ 998 (71) 288 88 88" className="navbar-connect"> +998 90 124 94 84 <i className="fa-solid fa-phone phone-icon"></i></a>
         </div>
-        <div className='navbar-hamburger'>ham</div>
+        <div className='navbar-hamburger'>  <TemporaryDrawer/></div>
        </div>
     </div>
   )

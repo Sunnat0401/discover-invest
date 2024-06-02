@@ -101,3 +101,41 @@
     background-color: #FAB448;
 }
 
+@media screen and (max-width: 950px){
+    .navbar .container {
+        padding: 20px 10px  ;
+     }
+    .navbar-link{
+        font-size: 13px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: #262524;
+    }
+    .star-icon{
+        padding:  0px 1px;
+    }
+    .navbar-logos{
+        gap: 5px;
+    }
+    .navbar-list{
+     padding: 0 5px;
+    }
+}
+@media screen and (max-width: 890px){
+     .navbar-items ,  .navbar-lists {
+        display: none;
+    }
+    .navbar-link{
+        font-size: 13px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: #262524;
+    }
+    .navbar-hamburger{
+        display: flex;
+    }
+    .navbar-select{
+       display: none;
+    }
+    .navbar-connect{
+   display: none;
+    }
+}
