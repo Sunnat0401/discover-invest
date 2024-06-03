@@ -16,7 +16,7 @@ i18n
     debug: true,
     resources :{
         uz:{translation :  uzTransalation},
-        en:{translation :  enTransalation},
+        en:{translation : enTransalation },
         ru:{translation: ruTransalation}
     },
     interpolation: {

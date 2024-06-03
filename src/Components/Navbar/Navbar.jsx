@@ -62,9 +62,9 @@ const Navbar = () => {
             </li>
         </ul>
         <select name="" id="" className='navbar-select' onChange={handleChange} value={languages}>
-            <option value="">uz</option>
-            <option value="">en</option>
-            <option value="">ru</option>
+            <option value="uz">uz</option>
+            <option value="en">en</option>
+            <option value="ru">ru</option>
         </select>
         <a href="tel:+ 998 (71) 288 88 88" className="navbar-connect"> +998 90 124 94 84 <i className="fa-solid fa-phone phone-icon"></i></a>
         </div>

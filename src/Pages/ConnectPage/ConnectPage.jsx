@@ -41,13 +41,13 @@ const ConnectPage = () => {
             Havolani to’ldirib, telefon raqamingizni qoldiring va biz yaqin vaqt
             ichida aloqaga chiqamiz
           </p>
-          <a href="" className="connectpage-link">
+          <a href="#icons" className="connectpage-link">
             <i class="fa-solid fa-arrow-down-long"></i>
           </a>
         </div>
       </div>
       <div className="container">
-          <div className="conntactpage-middle">
+          <div className="conntactpage-middle" id="icons">
           <div className="contactpage-left">
           <h2 className="about-title">
             <span className="about-line">Sizga qanday</span> <br />
@@ -131,9 +131,9 @@ const ConnectPage = () => {
           <div className="contactpage-footer">
             <p>© 2022 Discover Invest. Barcha huquqlar himoyalangan.</p>
             <div className="contactpage-controls">
-            <a href="https://business.facebook.com/latest/home?asset_id=866538573482797&nav_ref=push" className="contactpage-sublink"><i className="fa-brands fa-facebook-f"></i></a>
-            <a href="https://instagram.com/discover_invest?igshid=ZDdkNTZiNTM=" className="contactpage-sublink"><i className="fa-brands fa-instagram"></i></a>
-            <a href="https://t.me/discovery_invest" class="messengers__link" className="contactpage-sublink"><i className="fa-brands fa-telegram"></i></a>
+            <a href="https://business.facebook.com/latest/home?asset_id=866538573482797&nav_ref=push" className="contactpage-sublink"><i className="fa-brands fa-facebook-f control-icon"  ></i></a>
+            <a href="https://instagram.com/discover_invest?igshid=ZDdkNTZiNTM=" className="contactpage-sublink"><i className="fa-brands fa-instagram control-icon"></i></a>
+            <a href="https://t.me/discovery_invest" class="messengers__link" className="contactpage-sublink"><i className="fa-brands fa-telegram control-icon"></i></a>
             </div>
           </div>
       </div>

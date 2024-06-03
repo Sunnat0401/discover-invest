@@ -1,3 +1,6 @@
+*{
+    scroll-behavior: smooth;
+}
 .connectpage-wrapper{
     width: 100%;
     height: 90vh;
@@ -53,7 +56,6 @@
     left: -10px;
     padding: 0 10px  ;
 }
-
 .contact-cards{
     display: flex;
     align-items: center;
@@ -62,12 +64,11 @@
     
 }
 .contact-card{
-    width: 200px;
+    width: 220px;
     height: 120px;
     padding: 5px;
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
 }
 .contact-info{
     padding-left: 10px;
@@ -133,12 +134,7 @@
     height: 100%;
     border: none;
 }
-.contactpage-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 30px 0;
-}
+ 
 .contactpage-footer p{
     color: #B9B9B8;
 }
@@ -150,13 +146,13 @@
 .contactpage-sublink:hover{
     color: #FAB448;
 }
+.control-icon{
+ font-size: 20px;
+}
 @media screen and (max-width:1200px){
 .connectpage .container{
     padding: 0 5px;
 }
-}
-@media screen and (max-width:927px){
-
 }
 @media screen and (max-width:850px){
     .conntactpage-middle{
@@ -182,7 +178,6 @@
         padding: 5px;
         display: flex;
         justify-content: space-between;
-        border: 2px solid red;
     }
     .contact-info{
         padding-left: 10px;
@@ -262,16 +257,41 @@
         flex-wrap: wrap;
     } */
 }
+@media screen and (max-width:647px){
+    .contact-card{
+        width: 100%;
+        height: 100px;
+        margin: 10px 0;
+    }
+    .about-title{
+        margin-top: 30px;
+    }
+    .contactpage-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        margin: 30px 0;
+    }
+    .contactpage-controls{
+        padding: 0px 0 20px;
+    }
+    .contactpage-footer p{
+        padding: 0px 10px;
+    }
+}
 @media screen and (max-width:500px){
     .connectpage-title{
         padding: 50px 0;
         font-size: 36px;
         color: white;
     }
+   
 .connectpage-text{
     font-size: 15px;
     width: 350px;
 }
+
     }
     @media screen and (max-width:400px){
         .connectpage-text{
