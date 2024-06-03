@@ -14,3 +14,30 @@
     color: #7E654D;
     line-height: 20px;
 }
+@media screen and (max-width:1200px){
+    .projects .container{
+        padding: 0px 10px ;
+    }
+}
+@media screen and (max-width:900px){
+   
+.projects-card{
+    flex-wrap: wrap;
+}
+.projects-title{
+    padding: 20px 0;
+}
+.projects-text{
+    width: 100%;
+    padding: 0px 10px;
+}
+}
+@media screen and (max-width:600px){
+    .projects-title{
+        font-size: 36px;
+        padding: 10px 0;
+    }
+    .projects-card{
+    padding: 20px 0;        
+    }
+}

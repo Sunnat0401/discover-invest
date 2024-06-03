@@ -39,7 +39,7 @@ const ConnectPage = () => {
           <h1 className="connectpage-title">ALOQA</h1>
           <p className="connectpage-text">
             Havolani to’ldirib, telefon raqamingizni qoldiring va biz yaqin vaqt
-            ichida <br /> aloqaga chiqamiz
+            ichida aloqaga chiqamiz
           </p>
           <a href="" className="connectpage-link">
             <i class="fa-solid fa-arrow-down-long"></i>

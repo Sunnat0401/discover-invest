@@ -49,3 +49,31 @@
    .aboutpage-button:hover  {
        transform: translateY(0) translateX(0);
    }
+   @media screen and (max-width:1200px) {
+    .aboutpage .container{
+        padding: 0px 20px;
+    }
+   }
+   @media screen and (max-width:687px) {
+    .aboutpage-subtitle{
+        width: 100%;
+    }
+   }
+   @media screen and (max-width:450px) {
+    .aboutpage-information{
+        margin: 20px 0;
+    }
+    .aboutpage-title{
+        font-size: 36px;
+    }
+    .aboutpage-subtitle{
+        font-weight: bold;
+        line-height: 20px;
+    }
+  
+   }
+   @media screen and (max-width:350px) {
+    .aboutpage-title{
+        padding: 30px 0;
+    }
+   }

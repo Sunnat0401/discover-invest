@@ -14,6 +14,8 @@
 .connectpage-text{
     color: white;
     line-height: 20px;
+    width: 500px;
+
 }
 .connectpage-link{
     display: inline-block;
@@ -57,6 +59,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 30px 0;
+    
 }
 .contact-card{
     width: 200px;
@@ -64,6 +67,7 @@
     padding: 5px;
     display: flex;
     justify-content: space-between;
+    border: 2px solid red;
 }
 .contact-info{
     padding-left: 10px;
@@ -145,3 +149,188 @@
 .contactpage-sublink:hover{
     color: #FAB448;
 }
+@media screen and (max-width:1200px){
+.connectpage .container{
+    padding: 0 5px;
+}
+}
+@media screen and (max-width:927px){
+.conntactpage-middle{
+    gap: 10px;
+}
+.connectpage-wrapper{
+    width: 100%;
+    height: 90vh;
+    background: url('../../assets/bg4.jpg');
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+}
+.connectpage-title{
+    padding: 70px 0;
+    font-size: 56px;
+    color: white;
+}
+.connectpage-text{
+    color: white;
+    line-height: 20px;
+    width: 500px;
+
+}
+.connectpage-link{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #FAB448;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FAB448 ;
+    margin: 50px 0;
+    transition: .5s ease;
+}
+.connectpage-link:hover{
+    background-color: #FAB448;
+    color: white;
+}
+
+.about-title{
+    font-size: 32px;
+    font-weight: 700;
+    color: #262524;
+    position: relative;
+    margin-left: 60px;
+}
+.about-line::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: #FAB448;
+    top: 25%;
+    -webkit-transform: translateY(100%);
+    transform: translateX(-100%);
+    left: -10px;
+    padding: 0 10px  ;
+}
+
+.contact-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    
+}
+.contact-card{
+    width: 200px;
+    height: 120px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+}
+.contact-info{
+    padding-left: 10px;
+}
+.contact-text{
+    font-size: 15px;
+}
+.conntactpage-middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url('../../assets/bg-news.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contactpage-form{
+    width: 300px;
+    background-color: #FFFFFF;
+    padding: 10px 15px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    margin-top: -100px;
+}
+.connectpage-input{
+    width: 100%;
+    border: none;
+    border: 1px solid transparent;
+    background-color: #F4F4F4;
+    padding: 15px ;
+    outline: none;
+    border-radius: 3px;
+}
+.connectpage-textarea{
+    width: 100%;
+    background-color: #F4F4F4;
+    border: none;
+    outline: none;
+    padding: 15px ;
+}
+.contactpage-btn{
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    background-color: #FAB448;
+    color: white;
+    border: none;
+}
+.form-label{
+    font-size: 12px;
+    padding: 10px 0;
+}
+.contactpage-form::placeholder {
+    font-size: 10px;
+}
+.contactpage-map{
+    width: 100%;
+    height: 500px;
+  margin: 20px 0;
+}
+.contactpage-map iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.contactpage-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.contactpage-footer p{
+    color: #B9B9B8;
+}
+.contactpage-sublink{
+    margin: 0px 10px;
+    color: #282726;
+    transition: all 0.5s ease;
+}
+.contactpage-sublink:hover{
+    color: #FAB448;
+}
+}
+@media screen and (max-width:845px){
+    .conntactpage-middle{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:500px){
+    .connectpage-title{
+        padding: 50px 0;
+        font-size: 36px;
+        color: white;
+    }
+.connectpage-text{
+    font-size: 15px;
+    width: 350px;
+}
+    }
+    @media screen and (max-width:400px){
+        .connectpage-text{
+            width: 290px;
+        }
+    }

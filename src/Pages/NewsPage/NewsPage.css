@@ -1,3 +1,5 @@
+
+
 .newspage-card{
     display: flex;
     align-items: center;
@@ -13,4 +15,31 @@
     width: 600px;
     color: #7E654D;
     line-height: 20px;
+}
+@media screen and (max-width:1200px){
+    .newspage .container{
+        padding: 0px 10px ;
+    }
+}
+@media screen and (max-width:900px){
+   
+.newspage-card{
+    flex-wrap: wrap;
+}
+.newspage-title{
+    padding: 20px 0;
+}
+.newspage-text{
+    width: 100%;
+    padding: 0px 10px;
+}
+}
+@media screen and (max-width:600px){
+    .newspage-title{
+        font-size: 36px;
+        padding: 10px 0;
+    }
+    .newspage-card{
+    padding: 20px 0;        
+    }
 }
