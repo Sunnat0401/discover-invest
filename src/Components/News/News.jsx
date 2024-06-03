@@ -25,6 +25,24 @@ const News = () => {
       delay: 2000, // Set delay time in milliseconds (e.g., 2000 for 2 seconds)
       disableOnInteraction: false, // Auto-play will not be disabled after user interactions
     }}
+    breakpoints={{
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 5,
+      },
+      500: {
+        slidesPerView: 1,
+        spaceBetween: 5,
+      },
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 5,
+      },
+      700: {
+        slidesPerView: 3,
+        spaceBetween: 5,
+      },
+    }}
     modules={[Autoplay, Pagination , Navigation]}
         className="mySwiper"
       >

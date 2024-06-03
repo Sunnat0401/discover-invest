@@ -135,7 +135,7 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap; 
-        border: 2px solid red;
+        border: none;
     }
      .about-subline{
         color: #262524 ;
@@ -146,7 +146,7 @@
 }
 @media screen and (max-width: 650px) {
     .about-title{
-        font-size: 24px !important;
+        font-size: 20px !important;
     }
 
     .about-text{

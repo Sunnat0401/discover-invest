@@ -154,5 +154,9 @@
 .news-button:hover  {
  transform: translateY(0) translateX(0);
 }
-   
+   @media screen and (max-width:500px) {
+    .news-title{
+        font-size: 24px;
+    }
+   }
 
