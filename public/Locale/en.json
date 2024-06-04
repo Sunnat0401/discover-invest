@@ -64,9 +64,9 @@
     "contact4": "Phone",
     "contact5": "Business Hours",
     "contact6": "09:00 - 18:00 Monday to Saturday",
-    "contact7": "Phone Number",
+    "contact7": " Number",
     "contact8": "Name",
-    "contact9": "Contact Again",
+    "contact9": "Submit",
     "aboutpage1": "COMPANY",
     "aboutpage2": "ABOUT",
     "aboutpage3": "Our company not only improves projects but also opens its doors to new opportunities. Along with building state-level buildings, we continue to lay the foundation for the future.",
@@ -103,5 +103,8 @@
     "connectpage10": "Inquiries Department",
     "connectpage11": "How can we help you?",
     "connectpage12": "Feedback",
-    "footerBottom": "© 2022 Discover Invest. All rights reserved."
+    "footerBottom": "© 2022 Discover Invest. All rights reserved.",
+    "pl1": "Your name ...",
+    "pl2": "Your question ...",
+    "pl3": "Your phone number ..."
 }

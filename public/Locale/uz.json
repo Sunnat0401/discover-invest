@@ -103,6 +103,8 @@
      "connectpage10" :"Murojatlar bo'limi",
      "connectpage11" :"Sizga qanday yordam bera olamiz ?i",
      "connectpage12" :"Qayta aloqa" ,
-     "footerBottom" :"© 2022 Discover Invest. Barcha huquqlar himoyalangan."
- 
+     "footerBottom" :"© 2022 Discover Invest. Barcha huquqlar himoyalangan.",
+     "pl1" : "Ismingiz ...",
+     "pl2" : "Savolingiz ...",
+     "pl3" :"Telefon raqamizngiz"
 }

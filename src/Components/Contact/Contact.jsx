@@ -83,7 +83,7 @@ const Contact = () => {
     </div>
     <div className="input-group">
         <label className='contact-label' htmlFor="">{t("contact8")}</label>
-        <input type="text" required className="contact-input" placeholder='Ismingiz nima ?'  id='name'/>
+        <input type="text" required className="contact-input" placeholder={t("pl1")}  id='name'/>
     </div>
            </div>
             <button className='contact-btn' type='submit'>{t("contact9")}</button>

@@ -92,11 +92,11 @@ const ConnectPage = () => {
             <form action="" className="contactpage-form"  onSubmit={SendMessages} id="connectForm">
               <div className="input-group">
               <label htmlFor="" className="form-label">{t("contact8")}</label>
-              <input type="text " required placeholder="Ismingizni kiriting.." className="connectpage-input" id="name"/>
+              <input type="text " required placeholder={t("pl1")} className="connectpage-input" id="name"/>
               </div>
               <div className="input-group">
               <label htmlFor="" className="form-label"> {t("contact7")} </label>
-              <input type="text " required placeholder="Telefon raqamizngiz"  className="connectpage-input" id="numbers"/>
+              <input type="text " required placeholder={t("pl3")}  className="connectpage-input" id="numbers"/>
               </div>
               <div className="input-group">
               <label htmlFor="" className="form-label">{t("connectpage5")}</label>
@@ -115,7 +115,7 @@ const ConnectPage = () => {
               </div>
               <div className="input-group">
               <label htmlFor="" className="form-label">{t("connectpage11")}</label>
-              <textarea name="" id="texts" placeholder="Savolingizni qoldiring..." cols="30" rows="6"  required  className="connectpage-textarea"></textarea>
+              <textarea name="" id="texts" placeholder={t("pl2")} cols="30" rows="6"  required  className="connectpage-textarea"></textarea>
               <button className="contactpage-btn">{t("connectpage12")}</button>
               </div>
             </form>
