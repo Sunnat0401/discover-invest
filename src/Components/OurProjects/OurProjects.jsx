@@ -68,8 +68,8 @@ const OurProjects = () => {
             </div>
         </div>
         <div className="ourproject-buttons">
-         <Link to='projects' className="ourproject-button"></Link>
-         <Link to='projects' className="ourproject-button active "> {t("ourproject14")}</Link>
+         <Link to='/news' className="ourproject-button"></Link>
+         <Link to='/news' className="ourproject-button active "> {t("ourproject14")}</Link>
         </div>
         </div>
     </div>

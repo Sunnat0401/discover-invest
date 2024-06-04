@@ -34,7 +34,6 @@ const HomePages = () => {
                </div>
            </div>
         </div>
-          <i className=" fa-solid fa-phone homepage-modal "></i>
         </div>
       </div>
     </div>

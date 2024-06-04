@@ -132,8 +132,8 @@ const News = () => {
        
       </Swiper>
       <div className="news-buttons">
-         <Link to='news' className="news-button"></Link>
-         <Link to='news' className="news-button active ">{t("news10")}</Link>
+         <Link to='/connect' className="news-button"></Link>
+         <Link to='/connect' className="news-button active ">{t("news10")}</Link>
         </div>
       </div>
     </div>
