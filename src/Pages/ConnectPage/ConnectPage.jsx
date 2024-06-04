@@ -37,7 +37,7 @@ const ConnectPage = () => {
     <div className="connectpage">
         <Navbar />
       <div className="connectpage-wrapper">
-        <div className="container">
+        <div className="container top">
           <h1 className="connectpage-title">{t("connectpage1")}</h1>
           <p className="connectpage-text">
           {t("connectpage2")}

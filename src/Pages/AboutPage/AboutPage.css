@@ -59,10 +59,11 @@
    }
    @media screen and (max-width:450px) {
     .aboutpage-information{
-        margin: 20px 0;
+        margin: 0;
     }
     .aboutpage-title{
         font-size: 36px;
+        line-height: 40px;
     }
     .aboutpage-subtitle{
         font-weight: bold;
