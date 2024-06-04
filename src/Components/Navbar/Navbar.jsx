@@ -28,8 +28,8 @@ const Navbar = () => {
         <Link to="/" className="navbar-logos">
         <img src={navbarLogo} alt="navbar-logo" className="navbar-img" />
         <div className="navbar-title">
-            Discover <br />
-            invest
+        {t("discover")}  <br />
+        {t("invest")} 
         </div>
         </Link>
         <ul className="navbar-lists">
@@ -37,16 +37,16 @@ const Navbar = () => {
                 <NavLink to="/about" className="navbar-link"  activeClassName="active"> <i class="fa-solid fa-star star-icon"></i>{t("about")}</NavLink>
             </li>
             <li className="navbar-list">
-                <NavLink to="/projects" className="navbar-link"  activeClassName="active"> <i class="fa-solid fa-star star-icon"></i>Loyihalar</NavLink>
+                <NavLink to="/projects" className="navbar-link"  activeClassName="active"> <i class="fa-solid fa-star star-icon"></i>{t("projects")}</NavLink>
             </li>
             <li className="navbar-list">
-                <NavLink to="https://hr.di.uz/" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Kariyera </NavLink>
+                <NavLink to="https://hr.di.uz/" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>{t("career")} </NavLink>
             </li>
             <li className="navbar-list">
-                <NavLink to="/news" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Yangiliklar</NavLink>
+                <NavLink to="/news" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>{t("news")}</NavLink>
             </li>
             <li className="navbar-list">
-                <NavLink to="/connect" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>Aloqa</NavLink>
+                <NavLink to="/connect" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>{t("connect")}</NavLink>
             </li>
         </ul>
         <div className="navbar-right">

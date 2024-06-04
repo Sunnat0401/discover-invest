@@ -1,3 +1,16 @@
 {
-    "about" : "Haqida"
+    "discover" :"Discover" ,
+    "invest" :"invest" ,
+    "about" : "Haqida",
+    "projects" :"Loyihalar" ,
+    "career" :"Kariyera" ,
+    "news" :"Yangiliklar" ,
+    "connect" :"Aloqa",
+    "perfection" :"Har jihatta mukammallik" ,
+     "about1" : " kompaniyasi haqida" ,
+     "about2" :" Kompaniyamiz nafaqat loyihalarni takomillashtirish, balki yangi imkoniyatlar uchun ham o'z eshiklarini ochadi. Davlat miqyosidagi imoratlarni barpo qilish bilan birga, istiqbol uchun ham asos solishda davom etamiz Biz atrof-muhit haqida qayg'uramiz: kompaniya binolar va infratuzilma poydevorlarini barpo etishdan tashqari, ulardan foydalanish bilan bog'liq ekologik jihatlar uchun hamma ma’suliyatni o'z zimmasiga oladi." ,
+     "about3" :"Bozorda 14 yildan buyon " ,
+     "about4" :"Turar joy va majmualar" ,
+        "about5" :"Maxsus texnikalar" ,
+     "about6" :"Xodimlar soni" 
 }

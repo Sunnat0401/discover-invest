@@ -6,8 +6,10 @@ import OurProjects from '../../Components/OurProjects/OurProjects'
 import OurTeam from '../../Components/OurTeam/OurTeam'
 import './HomePages.css'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const HomePages = () => {
+  const {t ,  i18n } = useTranslation()
   return (
    <>
       <Navbar/>
@@ -19,16 +21,16 @@ const HomePages = () => {
         </video>
         <div className="container">
         <div className="homepage-info">
-        <h1 className="homepage-title">Discover <br /> Invest</h1>
-           <p className="homepage-text">Har jihatta mukammallik</p>
+        <h1 className="homepage-title">{t("discover")} <br /> {t("invest")}</h1>
+           <p className="homepage-text">{t("perfection")} </p>
            <div className="homepage-btns">
                <div className="homepage-bottom">
                      <a href='' className="homepage-border"></a>
                      <a href='' className="homepage-border"></a>
                </div>
                <div className="homepage-top">
-               <Link  to='/projects' className="homepage-btn active">Loyihalar</Link>
-            <Link to='connect' className="homepage-btn">Aloqa</Link>
+               <Link  to='/projects' className="homepage-btn active">{t("projects")}</Link>
+            <Link to='connect' className="homepage-btn">{t("connect")}</Link>
                </div>
            </div>
         </div>
