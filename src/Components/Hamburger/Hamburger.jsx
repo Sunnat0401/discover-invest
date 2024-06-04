@@ -7,6 +7,7 @@ import Divider from "@mui/material/Divider";
 import './Hamburger.css';
 import { useTranslation } from "react-i18next";
 import { hamburger } from "../../assets";
+import { Link, NavLink } from "react-router-dom";
 
 export default function TemporaryDrawer({ changeLanguages }) {
   const { t, i18n } = useTranslation();
@@ -31,10 +32,11 @@ export default function TemporaryDrawer({ changeLanguages }) {
     <Box sx={{ width: 265 }}>
       <List className="hamburger-open">
         <ul className="hamburger-lists">
-          <li onClick={onCloseD} className="hamburger-list"><a className="hamburger-link" href="#">{t("main")}</a></li>
-          <li onClick={onCloseD} className="hamburger-list"><a className="hamburger-link" href="#about">{t("about")}</a></li>
-          <li onClick={onCloseD} className="hamburger-list"><a className="hamburger-link" href="#offer">{t("species")}</a></li>
-          <li onClick={onCloseD} className="hamburger-list"><a className="hamburger-link" href="#favorites">{t("contact")}</a></li>
+          <li onClick={onCloseD} className="hamburger-list"><NavLink className="hamburger-link" to="/about">{t("about")}</NavLink></li>
+          <li onClick={onCloseD} className="hamburger-list"><NavLink className="hamburger-link" to="/projects">{t("projects")}</NavLink></li>
+          <li onClick={onCloseD} className="hamburger-list"><NavLink className="hamburger-link" to="https://hr.di.uz/">{t("career")}</NavLink></li>
+          <li onClick={onCloseD} className="hamburger-list"><NavLink className="hamburger-link" to="/news">{t("news")}</NavLink></li>
+          <li onClick={onCloseD} className="hamburger-list"><NavLink className="hamburger-link" to="/connect">{t("connect")}</NavLink></li>
         </ul>
         <select onChange={handleChanges} value={languagess} className='navbar-select hamburger-select'>
           <option value="uz">Uz</option>

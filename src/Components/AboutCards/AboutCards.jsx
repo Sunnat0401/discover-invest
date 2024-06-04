@@ -1,7 +1,9 @@
+import { useTranslation } from 'react-i18next'
 import './AboutCards.css'
 
 const AboutCards = () => {
-  return (
+    const {t} = useTranslation()
+    return (
     <div className='aboutcards'>
         <div className="container">
             <div className="aboutcard">
@@ -9,7 +11,7 @@ const AboutCards = () => {
                     14
                 </h1>
                 <p className="aboutcard-text">
-                Yildan beri bozorda
+                {t("aboutcards1")}
                 </p>
             </div>
             <div className="aboutcard">
@@ -17,7 +19,7 @@ const AboutCards = () => {
                 4000+
                 </h1>
                 <p className="aboutcard-text">
-          Xodimlar soni 
+                {t("aboutcards2")} 
                 </p>
             </div>
             <div className="aboutcard">
@@ -25,7 +27,7 @@ const AboutCards = () => {
                 150+
                 </h1>
                 <p className="aboutcard-text">
-              Loyihalar
+                {t("aboutcards3")}
                 </p>
             </div>
             <div className="aboutcard">
@@ -33,7 +35,7 @@ const AboutCards = () => {
                 16
                 </h1>
                 <p className="aboutcard-text">
-              Turar joy va majmualar
+                {t("aboutcards4")}
                 </p>
             </div>
             <div className="aboutcard">
@@ -41,7 +43,7 @@ const AboutCards = () => {
                 250+
                 </h1>
                 <p className="aboutcard-text">
-                Maxsus texnikalar
+                {t("aboutcards5")}
                 </p>
             </div>
             <div className="aboutcard">
@@ -50,7 +52,7 @@ const AboutCards = () => {
 9+
                 </h1>
                 <p className="aboutcard-text">
-                Shifoxonalar soni 
+                {t("aboutcards6")}
                 </p>
             </div>
         </div>

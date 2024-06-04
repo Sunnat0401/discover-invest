@@ -1,7 +1,9 @@
+import { useTranslation } from 'react-i18next'
 import { AboutPage2, AboutPage3, AboutPic } from '../../assets'
 import './Tasks.css'
 const Tasks = () => {
-  return (
+    const {t} = useTranslation()
+  return ( 
     <div className='tasks'>
         <div className="container">
             <div className="tasks-cards">
@@ -9,10 +11,10 @@ const Tasks = () => {
                     <span className="tasks-headline">1</span>
                     <div className="tasks-information">
                         <h1 className="tasks-title">
-                            Bizning vazifalarimiz
+                          {t("tasks1")}
                         </h1>
                         <p className="tasks-text">
-                        Kompaniyamiz O‘zbekistondagi qurilishda ilg‘or texnologiyalarni joriy qilib, zamonaviy dizayn yechimlarini yaratishni eng oliy maqsad deb biladi. Kutilganidek, birinchi darajali mutaxassislarga tayanib, biz yillar davomida mijozlarimiz talablarini e’tiborga olgan holda arzon turar joy va sanoat binolarini barpo etamiz.
+                        {t("tasks2")}
                         </p>
                     </div>
                     <div className="tasks-right">
@@ -23,10 +25,10 @@ const Tasks = () => {
                     <span className="tasks-headline">2</span>
                     <div className="tasks-information">
                         <h1 className="tasks-title">
-                            Bizning maqsadimiz
+                        {t("tasks3")}
                         </h1>
                         <p className="tasks-text">
-                        Markaziy Osiyodagi quyidagi afzalliklarni taqdim etadigan, sermahsul va puxta rejalashtirilgan loyihalarni o’z ichiga qamrab oladi: Jamiyat - mehnatga yuqori talablarni qo'yish orqali insonlarning turmush tarzini oshirish. Mijozlar - birgalikdagi faoliyatdan bahramand bo'lish, ochiq va uzoq muddatli munosabatlarni o'rnatish. Xodimlar - shaxs sifatida doimiy, shuningdek professional yuksalish
+                        {t("tasks4")}
                         </p>
                     </div>
                     <div className="tasks-right">
@@ -37,10 +39,10 @@ const Tasks = () => {
                     <span className="tasks-headline">3</span>
                     <div className="tasks-information">
                         <h1 className="tasks-title">
-                            Bizning vazifalarimiz
+                        {t("tasks5")}
                         </h1>
                         <p className="tasks-text">
-                        Kompaniyamiz O‘zbekistondagi qurilishda ilg‘or texnologiyalarni joriy qilib, zamonaviy dizayn yechimlarini yaratishni eng oliy maqsad deb biladi. Kutilganidek, birinchi darajali mutaxassislarga tayanib, biz yillar davomida mijozlarimiz talablarini e’tiborga olgan holda arzon turar joy va sanoat binolarini barpo etamiz.
+                        {t("tasks6")}
                         </p>
                     </div>
                     <div className="tasks-right">

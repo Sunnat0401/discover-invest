@@ -103,7 +103,7 @@
 
 @media screen and (max-width: 950px){
     .navbar .container {
-        padding: 20px 10px  ;
+        padding: 20px 10px !important ;
      }
     .navbar-link{
         font-size: 13px;

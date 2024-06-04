@@ -93,7 +93,7 @@ const Contact = () => {
            <iframe src="https://yandex.uz/map-widget/v1/?ll=69.284695%2C41.337148&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTQzMTQxMTc3EkRPyrt6YmVraXN0b24sIFRvc2hrZW50LCBZdW51c29ib2QgeW_Ku25hbGlzaGksIEJvZG9tem9yIG1ldHJvIGJla2F0aSIKDcSRikIVPVklQg%2C%2C&z=15.44 "></iframe>
             </div>
            </div>
-           <p className="contact-bottom">© 2022 Discover Invest. Barcha huquqlar himoyalangan.</p>
+           <p className="contact-bottom">{t("footerBottom")}</p>
         </div>
     </div>
   )

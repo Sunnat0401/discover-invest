@@ -1,19 +1,21 @@
+import { useTranslation } from 'react-i18next'
 import Contact from '../../Components/Contact/Contact'
 import Navbar from '../../Components/Navbar/Navbar'
 import News from '../../Components/News/News'
 import './NewsPage.css'
 
 const NewsPage = () => {
+  const {t} = useTranslation()
   return (
     <div className='newspage'>
         <Navbar/>
         <div className="container">
         <div className="newspage-card">
           <h1 className='newspage-title'>
-          Yangiliklar
+        {t("newspage1")}
           </h1>
           <div className="newspage-text">
-          Kompaniyamiz nafaqat loyihalarni takomillashtirish, balki yangi imkoniyatlar uchun ham o'z eshiklarini ochadi. Davlat miqyosidagi imoratlarni barpo qilish bilan birga, istiqbol uchun ham asos solishda davom etamiz
+          {t("newspage2")}
           </div>
         </div>
         <News/>
