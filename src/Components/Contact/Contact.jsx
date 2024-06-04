@@ -3,7 +3,10 @@ import { inputleft } from '../../assets'
 import './Contact.css'
 import { useState } from 'react'
 import { message } from 'antd'
+import { t } from 'i18next'
+import { useTranslation } from 'react-i18next'
 const Contact = () => {
+  const {t} = useTranslation()
     const [loading , setLoading] = useState(false)
     const SendMessage = ( event) =>{
         setLoading(true)
@@ -35,33 +38,33 @@ const Contact = () => {
            <div className="contact-wrapper">
            <div className="contact-left">
             <h2 className="contact-title">
-          <span className="contact-line">Aloqa</span> <br />
+          <span className="contact-line">{t("contact1")}</span> <br />
         </h2>
          <div className="contact-cards">
             <div className="contact-card">
             <i class="fa-solid fa-location-dot contact-iconic"></i>
                 <div className="contact-info">
-                    <h3 className="contact-subtitle">Manzil</h3>
+                    <h3 className="contact-subtitle">{t("contact2")}</h3>
                     <p className="contact-text">
-                    O’zbekiston Respublikasi, Toshkent shahri, Alisher Navoiy nomidagi Milliy Bog’ sayilgohi
+                    {t("contact3")}
                     </p>
                 </div>
             </div>
             <div className="contact-card">
             <i class="fa-solid fa-phone contact-iconic"></i>
                 <div className="contact-info">
-                    <h3 className="contact-subtitle">Telefon</h3>
+                    <h3 className="contact-subtitle">{t("contact4")}</h3>
                     <p className="contact-text">
-                    O’zbekiston Respublikasi, Toshkent shahri, Alisher Navoiy nomidagi Milliy Bog’ sayilgohi
+                    +998 71 288 88 88
                     </p>
                 </div>
             </div>
             <div className="contact-card">
             <i class="fa-solid fa-clock contact-iconic"></i>
                 <div className="contact-info">
-                    <h3 className="contact-subtitle">Ish vaxti </h3>
+                    <h3 className="contact-subtitle">{t("contact5")} </h3>
                     <p className="contact-text">
-                    O’zbekiston Respublikasi, Toshkent shahri, Alisher Navoiy nomidagi Milliy Bog’ sayilgohi
+                    {t("contact6")}
                     </p>
                 </div>
             </div>
@@ -75,15 +78,15 @@ const Contact = () => {
          <form className='contact-form'  onSubmit={SendMessage} id="myForm">
            <div className="contact-inputs">
            <div className="input-group">
-        <label className='contact-label' htmlFor="">Telefon raqam</label>
+        <label className='contact-label' htmlFor="">{t("contact7")}</label>
         <input  type="tel" required  className="contact-input" placeholder="+ 998 " id='numbers' />
     </div>
     <div className="input-group">
-        <label className='contact-label' htmlFor="">Ism</label>
+        <label className='contact-label' htmlFor="">{t("contact8")}</label>
         <input type="text" required className="contact-input" placeholder='Ismingiz nima ?'  id='name'/>
     </div>
            </div>
-            <button className='contact-btn' type='submit'>Qayta aloqa</button>
+            <button className='contact-btn' type='submit'>{t("contact9")}</button>
          </form>
             </div>
             <div className="contact-right">

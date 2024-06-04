@@ -6,13 +6,15 @@ import 'swiper/css/navigation';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { ourteam1, ourteam3, ourteam4, ourteam5, ourteam6 } from '../../assets';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 const News = () => {
+  const {t} = useTranslation()
   return (
     <div className='news'>
       <div className="container">
       <h2 className="news-title">
-          <span className="news-line">Kompaniya</span> <br />
-          <span className='pl'>   Yangiliklari</span>
+          <span className="news-line">{t("news1")}</span> <br />
+          <span className='pl'>   {t("news2")}</span>
         </h2>
         <Swiper
     slidesPerView={3}
@@ -55,9 +57,9 @@ const News = () => {
              <div className="news-information">
              <h3 className="news-headline">
         
-Qurilish loyihasining mutaxassisi deb kimni atash mumkin?
+             {t("news3")}
             </h3>
-            <p className="news-description">Loyiha menejeri</p>
+            <p className="news-description">{t("news4")}</p>
              </div>
           </SwiperSlide>
           <SwiperSlide className='news-card bg1'>
@@ -67,9 +69,9 @@ Qurilish loyihasining mutaxassisi deb kimni atash mumkin?
         </p>
              <div className="news-information">
              <h3 className="news-headline">
-             Discover Invest kompaniyasi hammani yangi 2023-yil bilan qutlaydi!
+             {t("news5")}
             </h3>
-            <p className="news-description">Loyiha menejeri</p>
+            <p className="news-description">{t("news4")}</p>
              </div>
           </SwiperSlide>
           <SwiperSlide className='news-card bg2'>
@@ -79,9 +81,9 @@ Qurilish loyihasining mutaxassisi deb kimni atash mumkin?
         </p>
              <div className="news-information">
              <h3 className="news-headline">
-             O'ZBEKISTON RESPUBLIKASI KONSTITUTSIYASI QABUL QILINGAN KUN
+             {t("news6")}
             </h3>
-            <p className="news-description">Loyiha menejeri</p>
+            <p className="news-description">{t("news4")}</p>
              </div>
           </SwiperSlide>
           <SwiperSlide className='news-card bg3'>
@@ -94,9 +96,9 @@ Qurilish loyihasining mutaxassisi deb kimni atash mumkin?
             
              <h3 className="news-headline">
          
-Discover Invest kompaniyasining keng ko'lamli qurilish obyektlari
+             {t("news7")}
             </h3>
-            <p className="news-description">Loyiha menejeri</p>
+            <p className="news-description">{t("news4")}</p>
              </div>
           </SwiperSlide>
           <SwiperSlide className='news-card bg4'>
@@ -108,9 +110,9 @@ Discover Invest kompaniyasining keng ko'lamli qurilish obyektlari
              <div className="news-information">
             
              <h3 className="news-headline">
-              Hasanvov Azamat Asqar o'g'li
+             {t("news4")}
             </h3>
-            <p className="news-description">Loyiha menejeri</p>
+            <p className="news-description">{t("news4")}</p>
              </div>
           </SwiperSlide>
           <SwiperSlide className='news-card bg5'>
@@ -122,16 +124,16 @@ Discover Invest kompaniyasining keng ko'lamli qurilish obyektlari
              <div className="news-information">
             
              <h3 className="news-headline">
-              Hasanvov Azamat Asqar o'g'li
+             {t("news9")}
             </h3>
-            <p className="news-description">Loyiha menejeri</p>
+            <p className="news-description">{t("news4")}</p>
              </div>
           </SwiperSlide>
        
       </Swiper>
       <div className="news-buttons">
          <Link to='news' className="news-button"></Link>
-         <Link to='news' className="news-button active ">Barcha yangiliklar</Link>
+         <Link to='news' className="news-button active ">{t("news10")}</Link>
         </div>
       </div>
     </div>

@@ -1,28 +1,30 @@
 import { Link } from 'react-router-dom'
 import './OurProjects.css'
+import { useTranslation } from 'react-i18next'
 const OurProjects = () => {
+  const {t} = useTranslation()
   return (
     <div className='ourproject'>
         <div className="container">
         <h2 className="ourproject-title">
-          <span className="ourproject-line">Bizning</span> <br />
-          <span className='pl'>   Loyihalar</span>
+          <span className="ourproject-line">{t("advantage1")}</span> <br />
+          <span className='pl'>   {t("ourteam1")}</span>
         </h2>
         <div className="ourproject-cards">
             <div className="ourproject-card">
             <div class="overlay"></div>
              <div className="ourproject-info">
-             <h3 className='ourproject-headline'>Magic City</h3>
+             <h3 className='ourproject-headline'>{t("ourteam2")}</h3>
               <p className="ourproject-text">
-              Shaharning yuragida barpo etilgan turar joy mavzesi.
+              {t("ourteam3")}
               </p>
              </div>
             </div>
             <div className="ourproject-card  background1">
             <div className="ourproject-info">
-             <h3 className='ourproject-headline'>Boulevard</h3>
+             <h3 className='ourproject-headline'>{t("ourteam4")}</h3>
               <p className="ourproject-text">
-              Aholi qulayligini ta’minlash maqsadida bunyod qilingan ko’p vazifali turar joy mavzesi
+              {t("ourteam5")}
               </p>
              </div>
             </div>
@@ -31,17 +33,17 @@ const OurProjects = () => {
             <div className="ourproject-card  background2">
             <div class="overlay"></div>
              <div className="ourproject-info">
-             <h3 className='ourproject-headline'>Gardens Residence</h3>
+             <h3 className='ourproject-headline'>{t("ourteam6")}</h3>
               <p className="ourproject-text">
-              Shaharning yuragida barpo etilgan turar joy mavzesi.
+              {t("ourteam7")}
               </p>
              </div>
             </div>
             <div className="ourproject-card  background3">
             <div className="ourproject-info">
-             <h3 className='ourproject-headline'>Fonon</h3>
+             <h3 className='ourproject-headline'>{t("ourteam8")}</h3>
               <p className="ourproject-text">
-              Shaharning yuragida barpo etilgan turar joy mavzesi.
+              {t("ourteam9")}
               </p>
              </div>
             </div>
@@ -50,24 +52,24 @@ const OurProjects = () => {
             <div className="ourproject-card  background4">
             <div class="overlay"></div>
              <div className="ourproject-info">
-             <h3 className='ourproject-headline'>Invento</h3>
+             <h3 className='ourproject-headline'>{t("ourteam10")}</h3>
               <p className="ourproject-text">
-              Tashkent City biznes markazida joylashgan xalqaro maktab va bolalar bog’chasi.
+              {t("ourtea11")}
               </p>
              </div>
             </div>
             <div className="ourproject-card  background5">
             <div className="ourproject-info">
-             <h3 className='ourproject-headline'>Prezident maktabi</h3>
+             <h3 className='ourproject-headline'>{t("ourteam12")}</h3>
               <p className="ourproject-text">
-              Bu xalqaro standartlarga javob beradigan bilim beruvchi ta’lim maskanidir
+              {t("ourteam13")}
               </p>
              </div>
             </div>
         </div>
         <div className="ourproject-buttons">
          <Link to='projects' className="ourproject-button"></Link>
-         <Link to='projects' className="ourproject-button active ">Yangiliklar</Link>
+         <Link to='projects' className="ourproject-button active "> {t("ourproject14")}</Link>
         </div>
         </div>
     </div>
