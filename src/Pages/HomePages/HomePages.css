@@ -28,6 +28,9 @@
     color: white;
     text-align: center;
   }
+  .homepage-info{
+    padding: 0px 10px;
+  }
   .homepage-info .homepage-title{
     font-size: 56px;
     color: white;

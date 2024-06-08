@@ -34,19 +34,29 @@ const Navbar = () => {
         </Link>
         <ul className="navbar-lists">
             <li className="navbar-list">
-                <NavLink to="/about" className="navbar-link"  activeClassName="active"> <i class="fa-solid fa-star star-icon"></i>{t("about")}</NavLink>
+                <NavLink to="/about" className="navbar-link"  activeClassName="active" onClick={() =>
+                  window.scrollTo({ top: 0 })
+              }> <i class="fa-solid fa-star star-icon"></i>{t("about")}</NavLink>
             </li>
             <li className="navbar-list">
-                <NavLink to="/projects" className="navbar-link"  activeClassName="active"> <i class="fa-solid fa-star star-icon"></i>{t("projects")}</NavLink>
+                <NavLink to="/projects" className="navbar-link"  activeClassName="active" onClick={() =>
+                  window.scrollTo({ top: 0 })
+              }> <i class="fa-solid fa-star star-icon"></i>{t("projects")}</NavLink>
             </li>
             <li className="navbar-list">
-                <NavLink to="https://hr.di.uz/" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>{t("career")} </NavLink>
+                <NavLink to="https://hr.di.uz/" className="navbar-link" onClick={() =>
+                  window.scrollTo({ top: 0 })
+              }> <i class="fa-solid fa-star star-icon"></i>{t("career")} </NavLink>
             </li>
             <li className="navbar-list">
-                <NavLink to="/news" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>{t("news")}</NavLink>
+                <NavLink to="/news" className="navbar-link" onClick={() =>
+                  window.scrollTo({ top: 0 })
+              }> <i class="fa-solid fa-star star-icon"></i>{t("news")}</NavLink>
             </li>
             <li className="navbar-list">
-                <NavLink to="/connect" className="navbar-link"> <i class="fa-solid fa-star star-icon"></i>{t("connect")}</NavLink>
+                <NavLink to="/connect" className="navbar-link" onClick={() =>
+                  window.scrollTo({ top: 0 })
+              }> <i class="fa-solid fa-star star-icon"></i>{t("connect")}</NavLink>
             </li>
         </ul>
         <div className="navbar-right">

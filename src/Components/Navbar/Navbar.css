@@ -7,9 +7,13 @@
 }
 .navbar-active{
     background-color: #e6e0e0;
+    padding: 10px 0;
 }
-.navbar .container {
+/* .navbar-active .container {
     padding: 19px 0 ;
+ } */
+.navbar .container {
+    padding: 19px 10px ;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,7 +104,17 @@
     color: #ffff;
     background-color: #FAB448;
 }
-
+.navbar .container {
+    padding: 20px 10px  ;
+ }
+ @media screen and (max-width: 995px){
+    .navbar-list{
+        padding: 0 5px;
+       }
+       .navbar-item{
+           padding: 0 5px;
+       }
+ }
 @media screen and (max-width: 950px){
     .navbar .container {
         padding: 20px 10px !important ;
